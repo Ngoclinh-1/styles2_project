@@ -1,0 +1,117 @@
+/* 1. Định kiểu cho thẻ body: đổi font-family và font-size */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #222222; /* Màu chữ xám đậm, đảm bảo tương phản tốt */
+}
+
+/* 2. Định kiểu cho thẻ header: đổi background-color */
+header {
+    background-color: #1A365D; /* Màu xanh navy đậm */
+    padding: 20px;
+}
+
+/* 3. Định kiểu cho thẻ nav: đổi background-color */
+nav {
+    background-color: #2B6CB0; /* Màu xanh dương trung bình */
+    padding: 10px;
+}
+
+/* 4. Định kiểu cho thẻ li: đổi thuộc tính display và width */
+/* Chuyển các mục danh sách từ khối dọc thành khối nằm ngang trên cùng 1 hàng */
+li {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+/* Tùy chọn bổ sung cho thẻ a trong menu (giúp dễ đọc và tránh lỗi WAVE) */
+nav a {
+    color: #FFFFFF; /* Chữ trắng trên nền xanh đậm đạt chuẩn tương phản cao */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 5. Định kiểu cho thẻ h1: đổi text-align, font-family, và color */
+h1 {
+    text-align: center;
+    font-family: "Georgia", "Times New Roman", serif;
+    color: #FFFFFF; /* Chữ trắng trên nền header #1A365D tương phản cực tốt */
+}
+
+/* 6. Định kiểu cho thẻ main: đổi background-color và font-size */
+main {
+    background-color: #F7FAFC; /* Màu nền xám nhạt dịu mắt */
+    font-size: 18px;
+    padding: 20px;
+    min-height: 400px;
+}
+
+/* 7. Định kiểu cho thẻ p: đổi line-height (giãn dòng giúp dễ đọc) */
+p {
+    line-height: 1.6;
+    color: #2D3748;
+}
+
+/* 8. Định kiểu cho thẻ footer: đổi background-color */
+footer {
+    background-color: #1A202C; /* Màu xám đen */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+}
+/* ===================================================
+   CÁC QUY TẮC MỚI CHO BÀI TẬP 2 (GRID & FLEXBOX)
+   =================================================== */
+
+/* 1. Sửa thẻ nav: dùng inline-block và chiều rộng 80% */
+nav {
+    display: inline-block;
+    width: 80%;
+}
+
+/* 2. Bộ chọn hậu duệ: Chỉ áp dụng cho ảnh bên trong thẻ nav (chiều rộng 10%) */
+nav img {
+    width: 10%;
+}
+
+/* 3. Tạo kiểu cho class .grid: Dùng CSS Grid 2 cột (mỗi cột 40%) */
+/* Kết hợp justify-content, align-items và row-gap */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around; /* Căn đều khoảng trống hai bên */
+    align-items: center;           /* Căn thẳng hàng theo chiều dọc */
+    row-gap: 20px;                 /* Khoảng cách giữa các hàng */
+}
+
+/* 4. Bộ chọn hậu duệ: Chỉ tạo kiểu cho ảnh bên trong class .grid (rộng 100%) */
+/* Đảm bảo không làm ảnh hưởng tới ảnh trong class .flex */
+.grid img {
+    width: 100%;
+}
+
+/* 5. Tạo kiểu cho class .flex: Dùng Flexbox */
+/* Kết hợp flex-wrap và justify-content */
+.flex {
+    display: flex;
+    flex-wrap: wrap;               /* Tự động rớt dòng khi hết chỗ */
+    justify-content: space-around; /* Căn đều khoảng cách giữa các phần tử */
+}
+
+/* 6. Định kiểu phụ cho nút Skip to Main Content (đảm bảo tương phản màu tốt cho WAVE) */
+.skip-link {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.skip-link:focus {
+    outline: 3px solid #FFD700;
+}
